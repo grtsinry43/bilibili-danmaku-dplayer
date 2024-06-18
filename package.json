@@ -1,0 +1,16 @@
+{
+  "name": "bilibili-danmaku-dplayer",
+  "version": "1.0.0",
+  "description": "一个调用B站api获取弹幕并转换为dplayer所需响应格式的服务端程序",
+  "main": "index.js",
+  "scripts": {
+    "run server": "node index.js"
+  },
+  "author": "grtsinry43",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "express": "^4.19.2",
+    "xml2js": "^0.6.2"
+  }
+}
