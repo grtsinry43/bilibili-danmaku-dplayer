@@ -3,6 +3,13 @@
 ## 介绍
 一个调用B站api获取弹幕并转换为dplayer所需响应格式的服务端程序
 
+## （新增）在docker中运行
+```shell
+docker build -t bilibili-danmaku-dplayer .
+docker run -d -p 3000:3000 --name bilibili-danmaku-dplayer bilibili-danmaku-dplayer
+```
+
+
 ## 使用
 1. 安装依赖
 ```shell

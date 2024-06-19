@@ -4,7 +4,7 @@
   "description": "一个调用B站api获取弹幕并转换为dplayer所需响应格式的服务端程序",
   "main": "index.js",
   "scripts": {
-    "run server": "node index.js"
+    "start": "node index.js"
   },
   "author": "grtsinry43",
   "license": "ISC",
