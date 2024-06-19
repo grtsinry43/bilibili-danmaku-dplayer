@@ -39,13 +39,13 @@ app.get('/danmaku', async (req, res) => {
             // 转换为dplayer的弹幕格式
             const danmakuList = result.i.d.map(d => {
                 const p = d.$.p.split(',');
-                return {
-                    time: parseFloat(p[0]),
-                    type: parseInt(p[1]),
-                    color: parseInt(p[3]),
-                    author: p[6],
-                    text: d._
-                };
+                return [
+                    parseFloat(p[0]),
+                    parseInt(p[1]),
+                    parseInt(p[3]),
+                    p[6],
+                    d._
+                ];
             });
 
             res.json({
