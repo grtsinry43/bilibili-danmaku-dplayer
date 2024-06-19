@@ -1,12 +1,14 @@
 const express = require('express');
 const axios = require('axios');
 const xml2js = require('xml2js');
+const cors = require('cors');
 
 const app = express();
 const port = 3000;
 
 // XML解析器
 const parser = new xml2js.Parser();
+app.use(cors());
 
 app.get('/danmaku', async (req, res) => {
     const { bv, cid } = req.query;
